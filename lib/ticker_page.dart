@@ -8,10 +8,10 @@ class TickerPage extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Ticker')
+        title: const Text('Ticker'),
       ),
       body: const Center(
-        child: Text('Ticker')
+        child: Text('Ticker'),
       ),
     );
   }
