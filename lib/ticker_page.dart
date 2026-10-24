@@ -27,7 +27,7 @@ class TickerPage extends ConsumerWidget {
       ),
       body: switch (ticks) {
         // Error with stale data: show rows dimmed, banner on top
-        AsyncError(:final error, :final value?) => Column(
+        AsyncError(:final error, hasValue: true, :final value?) => Column(
             children: [
               MaterialBanner(
                 content: Text('Feed error: $error — showing last prices'),
